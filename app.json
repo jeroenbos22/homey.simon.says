@@ -53,6 +53,14 @@
             "en": [ "simon says" ],
             "nl": [ "simon says" ]
         }
+    },
+    {
+        "id": "echo",
+        "importance": 1,
+        "triggers": {
+            "en": [ "echo" ],
+            "nl": [ "echo" ]
+        }
     }
   ],
   "permissions": [
