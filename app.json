@@ -1,0 +1,62 @@
+{
+  "id": "homey.simon.says",
+  "name": {
+    "en": "Simon says"
+  },
+  "version": "0.0.1",
+  "compatibility": ">=0.9",
+  "description": {
+    "en": "Let Homey repeat what you said"
+  },
+  "category": "tools",
+  "images": {
+    "large": "assets/images/large.jpg",
+    "small": "assets/images/small.jpg"
+  },
+  "author": {
+    "name": "Jeroen Bos",
+    "email": "jeroenbos22@gmail.com"
+  },
+  "contributors": {
+    "developers": [
+      {
+        "name": "Jeroen Bos",
+        "email": "jeroenbos22@gmail.com"
+      }
+    ]
+  },
+  "flow": {
+        "triggers": [
+            {
+                "id": "simon_says_trigger",
+                "title": {
+                    "en": "Simon says detected",
+                    "nl": "Simon says gedetecteerd"
+                },
+                "tokens": [
+                    {
+                        "name": "sentence",
+                        "title": {
+                            "en": "Sentence",
+                            "nl": "Zin"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+  "speech": [
+    {
+        "id": "simon_says",
+        "importance": 1,
+        "triggers": {
+            "en": [ "simon says" ],
+            "nl": [ "simon says" ]
+        }
+    }
+  ],
+  "permissions": [
+      "homey:manager:speech-input",
+      "homey:manager:speech-output"
+  ]
+}
